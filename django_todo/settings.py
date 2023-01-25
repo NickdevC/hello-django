@@ -25,6 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 if os.path.isfile('env.py'):
     import env
 SECRET_KEY = os.environ.get('SECRET_KEY')
+development = os.environ.get('DEVELOPMENT', True)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
